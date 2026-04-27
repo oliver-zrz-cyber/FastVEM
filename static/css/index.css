@@ -63,9 +63,10 @@ a:hover {
 
 .publication-venue {
   color: #555;
-  width: fit-content;
+  width: 100%;
   font-weight: bold;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .publication-awards {
