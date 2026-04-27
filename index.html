@@ -50,6 +50,10 @@
             <span class="author-block"><sup>1</sup>NanKai University</span>
           </div>
 
+          <div class="publication-venue is-size-6">
+            <span>ACM Transactions on Graphics (TOG) &amp; SIGGRAPH 2026</span>
+          </div>
+
           <!-- LINK BUTTONS -->
           <div class="level-item has-text-centered">
             <!-- Paper Link -->
@@ -111,28 +115,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Replace this text with your paper abstract. Explain the problem your paper addresses,
-            the key contributions, and the main results. This section should give readers a clear
-            understanding of what your paper is about and why it's important.
+            The intricate motion arising from fluid-boundary interactions is visually compelling, yet notoriously difficult and computationally expensive to simulate in the presence of complex boundaries. Accurately resolving boundary geometry requires body-fitted grids constructed via cut-cell methods, which often leads to poorly conditioned linear systems in the pressure projection stage and, consequently, prohibitive computational cost. We present FastVEM, an efficient boundary-conforming fluid simulation framework that enables high-fidelity flow-boundary interaction at substantially reduced cost. Computational efficiency is achieved through a coordinated, top-down design spanning numerical discretization, grid construction, and linear solvers. FastVEM adopts a Virtual Element Method (VEM) discretization to robustly enforce incompressibility and boundary conditions on irregular body-fitted grids, and employs a VEM polynomial-space Particle-in-Cell scheme for advection. Complementing this discretization, a convexity-preserving cut-cell strategy is introduced to construct simulation-friendly body-fitted grids. To accelerate pressure projection, we develop a Galerkin geometric multigrid solver featuring a diffusion-free prolongation operator that prevents coarse-level matrix densification, along with a nested, boundary-aware grid hierarchy that ensures well-posed placement of coarse-level degrees of freedom. Compared to prior cut-cell-based fluid simulators, FastVEM speeds up the computationally dominant pressure projection stage by up to 100x, while robustly handling even more challenging boundary geometries.
           </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== METHOD SECTION ===================== -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Method</h2>
-        <div class="content has-text-justified">
-          <p>
-            Describe your method here. Include pipeline diagrams, algorithm descriptions, or technical details.
-          </p>
-          <!-- Add your method diagram or image here -->
-          <img src="static/images/method.png" alt="Method Overview" class="publication-body-img" />
         </div>
       </div>
     </div>
