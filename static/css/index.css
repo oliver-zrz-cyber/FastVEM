@@ -1,0 +1,394 @@
+/* General Styles */
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #fafafa;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #f8f8f8;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.hero.teaser {
+  background-color: #ffffff;
+}
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+/* Publication Styles */
+.publication-title {
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.publication-authors {
+  font-family: 'Google Sans', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.publication-authors a {
+  color: #0066cc !important;
+}
+
+.publication-authors a:hover {
+  text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.publication-venue {
+  color: #555;
+  width: fit-content;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.publication-awards {
+  color: #ff3860;
+  width: fit-content;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+/* Link Buttons */
+.level-item {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.link-block {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+.link-block a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.link-block a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.link-block .icon {
+  margin-right: 0.5rem;
+}
+
+/* Video Container */
+.publication-video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+  border-radius: 10px !important;
+}
+
+.publication-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Sections */
+.section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.section:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+/* Content */
+.content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.content h1,
+.content h2,
+.content h3 {
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 700;
+}
+
+.publication-body-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1rem 0;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+/* Carousel Styles */
+.carousel {
+  position: relative;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.carousel .item {
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel img,
+.carousel video {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+.results-carousel {
+  overflow: hidden;
+}
+
+.results-carousel .item {
+  margin: 5px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.results-carousel video {
+  margin: 0;
+}
+
+.slider-pagination .slider-page {
+  background: #000000;
+}
+
+/* Title Styles */
+.title {
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 700;
+}
+
+.title.is-1 {
+  font-size: 2.5rem;
+}
+
+.title.is-2 {
+  font-size: 2rem;
+}
+
+.title.is-3 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.title.is-4 {
+  font-size: 1.5rem;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1.25rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #f8f8f8;
+  padding: 3rem 0;
+  margin-top: 2rem;
+}
+
+.footer-content {
+  max-width: 100%;
+}
+
+.footer a {
+  color: #0066cc;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* BibTeX Section */
+#BibTeX pre {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  border-left: 4px solid #0066cc;
+}
+
+#BibTeX code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .publication-title {
+    font-size: 1.8rem;
+  }
+
+  .publication-authors {
+    font-size: 1rem;
+  }
+
+  .title.is-3 {
+    font-size: 1.5rem;
+  }
+
+  .link-block {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .level-item {
+    flex-direction: column;
+  }
+
+  .carousel .item {
+    padding: 10px;
+  }
+}
+
+/* Utility Classes */
+.has-text-centered {
+  text-align: center;
+}
+
+.has-text-justified {
+  text-align: justify;
+}
+
+.dnerf {
+  font-variant: small-caps;
+}
+
+.eql-cntrb {
+  font-size: smaller;
+}
+
+/* Button Enhancements */
+.button {
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.button.is-dark {
+  background-color: #333;
+  color: white;
+}
+
+.button.is-dark:hover {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+}
+
+.button.external-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container adjustments */
+.container.is-max-desktop {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+/* Social Links */
+.icon-link {
+  font-size: 25px;
+  color: #000;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.icon-link:hover {
+  transform: scale(1.2);
+}
+
+/* Code Block */
+code {
+  background-color: #f5f5f5;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  color: #333;
+}
+
+pre code {
+  padding: 0;
+  background-color: transparent;
+}
+
+/* Images in Content */
+.content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Tables */
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.content table th,
+.content table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.content table th {
+  background-color: #f5f5f5;
+  font-weight: 700;
+}
+
+.content table tr:nth-child(even) {
+  background-color: #fafafa;
+}

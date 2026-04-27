@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Academic Paper Project Page">
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Your Paper Title">
+  <meta property="og:description" content="Paper description for social media sharing">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="static/images/preview.png">
+  
+  <title>Your Paper Title</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@0.7.5/dist/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-slider@0.2.3/dist/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="icon" href="static/images/favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/js/all.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bulma-carousel@0.7.5/dist/js/bulma-carousel.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bulma-slider@0.2.3/dist/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+<!-- ===================== HEADER / TITLE SECTION ===================== -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <!-- PAPER TITLE -->
+          <h1 class="title is-1 publication-title">Your Paper Title</h1>
+          
+          <!-- AUTHORS -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://yourname.github.io">Your Name</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="">Co-Author Name</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="">Another Author</a><sup>2</sup>
+            </span>
+          </div>
+
+          <!-- AFFILIATIONS -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Your University,</span>
+            <span class="author-block"><sup>2</sup>Partner University</span>
+          </div>
+
+          <!-- PUBLICATION VENUE -->
+          <div class="publication-venue is-size-6">
+            <span>CVPR 2024</span>
+          </div>
+
+          <!-- LINK BUTTONS -->
+          <div class="level-item has-text-centered">
+            <!-- Paper Link -->
+            <span class="link-block">
+              <a href="./static/pdfs/paper.pdf" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Paper</span>
+              </a>
+            </span>
+
+            <!-- Low Resolution Paper -->
+            <span class="link-block">
+              <a href="./static/pdfs/paper_lowres.pdf" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Paper (Low Resolution)</span>
+              </a>
+            </span>
+
+            <!-- Supplementary Material -->
+            <span class="link-block">
+              <a href="./static/pdfs/supplementary.pdf" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Supplementary</span>
+              </a>
+            </span>
+
+            <!-- Code -->
+            <span class="link-block">
+              <a href="https://github.com/yourname/yourrepo" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+              </a>
+            </span>
+
+            <!-- Dataset -->
+            <span class="link-block">
+              <a href="https://yourlink.com/dataset" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-database"></i>
+                </span>
+                <span>Dataset</span>
+              </a>
+            </span>
+
+            <!-- Video Demo -->
+            <span class="link-block">
+              <a href="https://youtu.be/drmM8QsZ9dQ" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-youtube"></i>
+                </span>
+                <span>Video</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TEASER VIDEO SECTION ===================== -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="teaser-video" autoplay controls muted loop height="100%">
+        <!-- Your teaser video here -->
+        <source src="static/videos/banner_video.mp4" type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Add your teaser video or demo here
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABSTRACT SECTION ===================== -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Replace this text with your paper abstract. Explain the problem your paper addresses,
+            the key contributions, and the main results. This section should give readers a clear
+            understanding of what your paper is about and why it's important.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RESULTS / IMAGES CAROUSEL ===================== -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Main Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            Here you can showcase your main results or images
+          </p>
+        </div>
+
+        <!-- Carousel for images -->
+        <div id="results-carousel" class="carousel">
+          <div class="item">
+            <img src="static/images/result1.png" alt="Result 1" />
+          </div>
+          <div class="item">
+            <img src="static/images/result2.png" alt="Result 2" />
+          </div>
+          <div class="item">
+            <img src="static/images/result3.png" alt="Result 3" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== METHOD SECTION ===================== -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            Describe your method here. Include pipeline diagrams, algorithm descriptions, or technical details.
+          </p>
+          <!-- Add your method diagram or image here -->
+          <img src="static/images/method.png" alt="Method Overview" class="publication-body-img" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== VIDEO SECTION ===================== -->
+<!--
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Video Presentation</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+<!-- ===================== COMPARISONS ===================== -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Comparisons</h2>
+        <div class="content has-text-justified">
+          <p>
+            Compare your method with existing approaches
+          </p>
+        </div>
+        <!-- Add comparison table or images -->
+        <img src="static/images/comparison.png" alt="Method Comparison" class="publication-body-img" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BIBTEX ===================== -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{YourPaper2024,
+  title={Your Paper Title},
+  author={Your Name and Co-Author Name and Another Author},
+  journal={Conference or Journal Name},
+  year={2024}
+}</code></pre>
+  </div>
+</section>
+
+<!-- ===================== ACKNOWLEDGMENTS ===================== -->
+<section class="section" id="Acknowledgments">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgments</h2>
+    <p>
+      We thank the reviewers for their feedback. This work is supported by XXX grant.
+      This website's template is adapted from <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Eliahuhorwitz's template</a>.
+    </p>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            Website template is based on the <a href="https://nerfies.github.io/">Nerfies</a> project page.
+          </p>
+          <p>
+            © 2024 Your Name. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
